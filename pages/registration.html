@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!--Header -->
+    <header class="header">
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-item"><a class="menu-link" href="../index.html">Головна</a></li>
+          <li class="menu-item"><a class="menu-link" href="articles.html">Статті</a></li>
+          <li class="menu-item"><a class="menu-link" href="catalog.html">Каталог</a></li>
+          <li class="menu-item"><a class="menu-link" href="contacts.html">Контакти</a></li>
+          <li class="menu-item"><a class="menu-link" href="gallery.html">Галерея</a></li>
+          <li class="menu-item"><a class="menu-link" href="page-nav.html">Навігація</a></li>
+          <li class="menu-item menu-item__current"><a class="menu-link" href="registration.html">Реєстрація</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--Main block -->
+    <main class="main">
+      <h1 class="title">Реєстрація</h1>
+      <!--Особисті дані -->
+      <form class="form-box" action="https://tests.fomenko.top/echo/index.php" method="get">
+        <fieldset>
+          <legend>Особисті дані</legend>
+
+          <div class="form-group">
+            <label for="name">Ваше ім'я</label>
+            <input type="text" name="name" id="name" placeholder="Ім'я" minlength="3" maxlength="10" value="">
+          </div>
+
+          <div class="form-group">
+            <label for="surname">Ваше прізвище</label>
+            <input type="text" name="surname" id="surname" placeholder="Прізвище" minlength="3" maxlength="10" value="">
+          </div>
+
+          <p>Стать</p>
+          <div class="form-group border-dashed">
+            <input type="radio" name="gender" id="man" value="man">
+            <label for="man">Чоловік</label>
+          </div>
+
+          <div class="form-group border-dashed">
+            <input type="radio" name="gender" id="woman" value="woman">
+            <label for="woman">Жінка</label>
+          </div>
+
+          <div class="form-group">
+            <label for="tel">Контактний телефон</label>
+            <input type="tel" name="tel" id="tel" placeholder="Телефон" minlength="10" maxlength="13" value="">
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="E-mail">
+          </div>
+
+          <div class="form-group">
+            <label for="birthday">Дата народження</label>
+            <input type="date" name="birthday" id="birthday">
+          </div>
+        </fieldset>
+        <!--Обліковий запис -->
+        <fieldset>
+          <legend>Обліковий запис</legend>
+
+          <div class="form-group">
+            <label for="username">Логін</label>
+            <input type="text" name="username" id="username" placeholder="Логін">
+          </div>
+
+          <div class="form-group">
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password" placeholder="Пароль" minlength="3" maxlength="10">
+          </div>
+
+          <div class="form-group">
+            <label for="passwordcheck">Повторіть пароль</label>
+            <input type="password" name="passwordcheck" id="passwordcheck" placeholder="Повторіть пароль" value="">
+          </div>
+
+          <div class="form-group">
+            <label for="photo">Фото для аватарки</label>
+            <input type="file" name="photo" id="photo">
+          </div>
+        </fieldset>
+        <!--Додаткова інформація -->
+        <fieldset>
+          <legend>Додаткова інформація</legend>
+
+          <div class="form-group">
+            <label for="auto">Яка марка машин Вам подобається?</label>
+            <select name="auto" id="auto" multiple size="3">
+              <option selected disabled value="">Оберіть марку</option>
+              <option value="ford">Ford</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="nissan">Nissan</option>
+              <option value="bmw">BMW</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="color">Який колір Вам подобається?</label>
+            <input type="color" name="color" id="color">
+          </div>
+
+          <div class="form-group">
+            <label for="month">Який місяць в цьому році був для Вас найкращим?</label>
+            <input type="month" name="month" id="month">
+          </div>
+
+          <p>Яка кухня подобається</p>
+          <div class="form-group border-dashed">
+            <input id="ua" name="kit-ua" type="checkbox" value="ua">
+            <label for="ua">Українська</label>
+          </div>
+
+          <div class="form-group border-dashed">
+            <input id="it" name="kit-it" type="checkbox" value="it">
+            <label for="it">Італійська</label>
+          </div>
+
+          <div class="form-group border-dashed">
+            <input id="gr" name="kit-gr" type="checkbox" value="gr">
+            <label for="gr">Грузинська</label>
+          </div>
+
+          <div class="form-group border-dashed">
+            <input id="jp" name="kit-jp" type="checkbox" value="jp">
+            <label for="jp">Японська</label>
+          </div>
+
+          <div class="form-group">
+            <label for="hobby">Напиши про своє хобі</label>
+            <textarea name="hobby" id="hobby" cols="30" rows="10" placeholder="Моє хобі..."></textarea>
+          </div>
+        </fieldset>
+        <!--Кнопки -->
+        <div class="form-group">
+          <button class="btn" type="submit"> Надіслати</button>
+        </div>
+
+        <div class="form-group">
+          <button class="btn" type="reset"> Скинути</button>
+        </div>
+      </form>
+    </main>
+    <!--Footer -->
+    <footer class="footer">
+      <div class="footer-item">&copy; Alina Scorpion</div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
